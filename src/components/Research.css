@@ -1,0 +1,70 @@
+.research{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+p{
+    font-size: 14px;
+    font-weight: bold;
+}
+.review-container{
+    text-align: center;
+    position: relative;
+    transition: 300ms;
+}
+.research svg{
+    font-size: 26px;
+}
+.review-container input{
+    opacity: 0;
+    position: absolute;
+}
+.unsatisfied:hover, 
+.unsatisfied input:checked ~ :is(svg, p){
+    fill: red;
+    color: red;
+    text-shadow: 1px 1px 5px red;
+}
+.neutral:hover, 
+.neutral input:checked ~ :is(svg, p){
+    fill: var(--rosa);
+    color: var(--rosa);
+    text-shadow: 1px 1px 5px var(--rosa);
+}
+.satisfied:hover,
+.satisfied input:checked ~ :is(svg, p){
+    fill: var(--lilás);
+    color: var(--lilás);
+    text-shadow: 1px 1px 5px var(--lilás);
+}
+.very-satisfied:hover,
+.very-satisfied input:checked ~ :is(svg, p){
+    fill: green;
+    color: green;
+    text-shadow: 1px 1px 5px green;
+}
+.comment-area{
+    display: flex;
+    margin: .5rem auto;
+}
+.comment-area label{
+    width: 100%;
+}
+.comment-area label p{
+    float: left;
+    margin-left: 10px;
+}
+#comment{
+    padding: .5rem;
+    resize: none;
+    height: 5rem;
+    width: 95%;
+    margin: .3rem auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--branco);
+}
+#comment:focus{
+    outline: none;
+}

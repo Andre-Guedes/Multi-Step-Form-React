@@ -1,0 +1,13 @@
+.title :is(h2, p){
+    margin-bottom: .5rem ;
+}
+.summary-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.summary-container p{
+    margin: auto auto;
+    width: 90%;
+    text-align: left;
+}

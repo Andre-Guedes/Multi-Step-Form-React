@@ -1,0 +1,33 @@
+.form-container{
+    height: 60vh;
+    width: 40vw;
+    color: #dfdfdf;
+    margin: 3rem;
+    padding: 2rem;
+    background-color: #ffffff66;
+    box-shadow: 0 0 20px #ffffff99;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+  }
+  .form-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+  }
+  .form-header h4{
+    width: 10rem;
+    font-weight: bold;
+    color: #4E00A3;
+    text-shadow: 1px 1px 2px #25225b99;
+  }
+  .form-header p{
+    background: #ffffff80;
+    width: 5rem;
+    height: 1.5px;
+    margin: auto 20px;
+  }
+  .actived{
+    color: #FD045F !important;
+  }

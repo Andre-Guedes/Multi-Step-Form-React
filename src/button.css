@@ -1,0 +1,32 @@
+.actions{
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+    align-items: end;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    border: solid .5px var(--azul-escuro);
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0 #6c05db8f;
+    background-color: transparent;
+    color: var(--branco);
+    font-weight: bold;
+    transition: 300ms;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--azul-escuro);
+    box-shadow: 0 0 10px #6c05db8f, 0 0 25px #430388bd;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 3px #ffffff80;
+}
+button svg{
+    margin: 2px 5px 0;
+}

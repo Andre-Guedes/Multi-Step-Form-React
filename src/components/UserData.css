@@ -1,0 +1,46 @@
+.userform{
+    background-color: #fbfbfb46;
+    width: 40vw;
+    height: 35vh;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #2d2d2d;
+}
+.title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+.userData{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .2rem;
+}
+.userData label p{
+    float: left;
+    z-index: 0;
+    margin: 0 0 1.3rem 10px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 13px;
+    transition: 400ms;
+    transform: translateY(-22px);
+}
+label input{
+    padding: 6px 10px;
+    width: 36vw;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 13px rgba(30, 30, 30, 0.62);
+    background-color: transparent;
+    z-index: 1;
+}
+input:is(:hover, :valid, :focus) ~ p{
+    transform: translateY(-44px)
+}
+input:is(:hover, :valid, :focus){
+    outline: solid 1px var(--lilás);
+    box-shadow: 0px 0px 13px var(--lilás);
+}
